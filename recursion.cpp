@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 //print name n times()
-/*
+
 void nam(string name, int n) {
     if (n == 0) return;     // base case
     cout << name << endl;
@@ -12,9 +12,9 @@ int main() {
     nam("jagat", 5);
     return 0;
 }
-*/
+
 //print linearly from 1 to n
-/*
+
 void linear(int i,int n){
     if (i>n){
         return;
@@ -26,33 +26,33 @@ void linear(int i,int n){
 int main(){
     linear(0,5);
 }
-*/
+
 //print from n to 1
 
-// void backword(int n){
-//     if(n<0){
-//         return;
-//     }
-//     cout<<n<<" "<<endl;
-//     backword(n-1);
-// }
-// int main(){
-//     backword(65);
-// }
+void backword(int n){
+    if(n<0){
+        return;
+    }
+    cout<<n<<" "<<endl;
+    backword(n-1);
+}
+int main(){
+    backword(65);
+}
     
 //print linearly from 1 to n using backtracking 
 
-// void linearly(int i){
-//     if(i<1){
-//         return;
-//     }
-//     linearly(i-1);
-//     cout<<i;
-//     cout<<endl;
-//  }
-//  int main(){
-//     linearly(5);
-// }
+void linearly(int i){
+    if(i<1){
+        return;
+    }
+    linearly(i-1);
+    cout<<i;
+    cout<<endl;
+ }
+ int main(){
+    linearly(5);
+}
 //swapping the array or reversing the array
 /*void reverse(int i,int arr[],int n){
     if(i>=n/2){
@@ -366,6 +366,7 @@ int main() {
     auto ans = firstAndLastPosition(arr, arr.size(), k);
     cout << ans.first << "is the first occurance  index " << ans.second<< "is the last occurance  index"<<endl;
 }
+
 
 
 
