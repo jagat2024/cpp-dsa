@@ -1,2 +1,2 @@
-# c++-dsa
+# c++ dsa
 uploaded dsa questions and solution
