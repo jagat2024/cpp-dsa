@@ -33,17 +33,18 @@ class Circular_linked_list{
         
     }
     void print_ll(){
+        if(head == NULL) return;
 
-        Node* temp=tail->next;
-        int c=0;
-        while(c!=14){
-            cout<<temp->data<<"->";
-            temp=temp->next;
-            c++;
-        }
-        cout<<endl;
+        Node* temp = head;
+        do{
+            cout << temp->data << "->";
+            temp = temp->next;
+        }while(temp != head);
+
+        cout << "HEAD\n";
     }
 };
+
 int main(){
     Circular_linked_list cll;
     cll.push_back(1);
